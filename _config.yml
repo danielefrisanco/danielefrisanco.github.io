@@ -1,0 +1,14 @@
+title: Daniele Frisanco
+description: Full-stack Developer
+author:
+  name: Daniele Frisanco
+  email: daniele.frisanco@gmail.com
+  linkedin: https://www.linkedin.com/in/daniele-frisanco-9589835a/
+  github: https://github.com/danielefrisanco
+  rubygems: https://rubygems.org/profiles/danielefrisanco
+  npm: https://www.npmjs.com/~danielefrisanco
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-seo-tag
