@@ -103,10 +103,10 @@ strong {
     text-align: center;
 }
 
-.intro-image img {
-    max-width: 150px;
-    max-height: 150px;
-    width: 100%;
+img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover; /* Prevents the image from distorting */
     border-radius: 50%; /* Creates a circular image */
     box-shadow: 0 4px 8px rgba(0,0,0,0.15);
 }
