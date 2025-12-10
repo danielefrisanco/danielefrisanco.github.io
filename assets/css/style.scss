@@ -104,8 +104,8 @@ strong {
 }
 
 .intro-image img {
-    max-width: 200px;
-    max-height: 200px;
+    max-width: 150px;
+    max-height: 150px;
     width: 100%;
     border-radius: 50%; /* Creates a circular image */
     box-shadow: 0 4px 8px rgba(0,0,0,0.15);
@@ -114,6 +114,6 @@ strong {
 /* Responsive layout for smaller screens */
 @media (max-width: 600px) {
     .intro-container {
-        flex-direction: column-reverse; /* Stacks image on top of text */
+        flex-direction: column; /* Stacks image on top of text */
     }
 }

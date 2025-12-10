@@ -7,15 +7,15 @@ description: Daniele Frisanco is a freelance and full-time Full-stack Developer 
 ## About Me
 
 <div class="intro-container">
+  <div class="intro-image">
+    <img src="/assets/images/profile.jpg" alt="Daniele Frisanco">
+  </div>
   <div class="intro-text">
     I design backend systems for clarity and easy maintenance, while ensuring my frontend work is optimized for security and application performance. I am a loyal team member and can work autonomously, committed to delivering well-formatted code that simply works.
     <br><br>
     <strong>I am currently available for freelance projects and full-time employment opportunities. Feel free to connect with me.</strong>
     <br>
     <a href="/assets/pdf/Daniele_Frisanco_CV.pdf" class="button" target="_blank" rel="noopener noreferrer">Download CV</a>
-  </div>
-  <div class="intro-image">
-    <img src="/assets/images/profile.jpg" alt="Daniele Frisanco">
   </div>
 </div>
 ### Connect with me
