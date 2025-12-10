@@ -1,24 +1,48 @@
 ---
 layout: home
+title: Full-stack Developer for Hire | Daniele Frisanco
+description: Daniele Frisanco is a freelance and full-time Full-stack Developer available for new projects and job opportunities. Expert in Ruby on Rails, Python, Vue.js, and Docker.
 ---
 
 ## About Me
 
-I design backend systems for clarity and easy maintenance, while ensuring my frontend work is optimized for security and application performance. I am a loyal team member and can work autonomously, committed to delivering well-formatted code that simply works.
-
+<div class="intro-container">
+  <div class="intro-text">
+    I design backend systems for clarity and easy maintenance, while ensuring my frontend work is optimized for security and application performance. I am a loyal team member and can work autonomously, committed to delivering well-formatted code that simply works.
+    <br><br>
+    <strong>I am currently available for freelance projects and full-time employment opportunities. Feel free to connect with me.</strong>
+    <br>
+    <a href="/assets/pdf/Daniele_Frisanco_CV.pdf" class="button" target="_blank" rel="noopener noreferrer">Download CV</a>
+  </div>
+  <div class="intro-image">
+    <img src="/assets/images/profile.jpg" alt="Daniele Frisanco">
+  </div>
+</div>
 ### Connect with me
 
 - [**Email**](mailto:{{ site.author.email }})
-- [**LinkedIn**]({{ site.author.linkedin }})
-- [**GitHub**]({{ site.author.github }})
-- [**RubyGems**]({{ site.author.rubygems }})
-- [**npm**]({{ site.author.npm }})
+- [**LinkedIn**]({{ site.author.linkedin }}){:target="_blank" rel="noopener noreferrer"}
+- [**GitHub**]({{ site.author.github }}){:target="_blank" rel="noopener noreferrer"}
+- [**RubyGems**]({{ site.author.rubygems }}){:target="_blank" rel="noopener noreferrer"}
+- [**npm**]({{ site.author.npm }}){:target="_blank" rel="noopener noreferrer"}
 
 ---
 
-## Work Experience as of December 2025
+## Key Skills & Technologies
 
-### AI.Anima srl | Milan, Italy
+Here is a summary of my primary areas of expertise and the technologies I have the most experience with:
+
+- **Ruby on Rails:** Over 10 years of experience in building, maintaining, and scaling complex back-end systems.
+- **Python:** 4+ years of professional experience, including creating microservices, data processing scripts, and leveraging AI/ML libraries with FastAPI and OpenAI.
+- **Vue.js:** Nearly 4 years of experience in developing dynamic and responsive front-end applications, including migrating from Vue 2 to Vue 3.
+- **Node.js:** Extensive experience building back-end services and APIs, often in parallel with existing Ruby on Rails systems.
+- **Docker & CI/CD:** Over 7 years of experience in containerizing applications and automating deployment workflows with tools like Docker Compose and GitHub Actions.
+
+---
+
+## Work Experience as of december 2025
+
+### [AI.Anima srl](https://ai-anima.ai){:target="_blank" rel="noopener noreferrer"} | Milan, Italy
 *Freelance Full Stack Developer (November 2025 – Ongoing)*
 
 - Responsive corporate website using Nuxt.js 3, Vue 3, and TypeScript (SSR).
@@ -30,7 +54,7 @@ I design backend systems for clarity and easy maintenance, while ensuring my fro
 
 **Technologies:** Nuxt.js 3 SSR, Python 3, Docker, RESTful API, Claude Ai, HeyGen LiveAvatar SDK, GitHub Actions CI/CD
 
-### Leanbit srl | Padova, Italy
+### [Leanbit srl](https://leanbit.it){:target="_blank" rel="noopener noreferrer"} | Padova, Italy
 *Freelance Software Developer (January 2024 – August 2025)*
 
 - Consultancy and full-stack development, supplier for Binary System srl.
@@ -45,7 +69,7 @@ I design backend systems for clarity and easy maintenance, while ensuring my fro
 
 **Technologies:** Ruby on Rails, NodeJS, Vue.js, python3, API, postgreSQL, knex.js, docker, git, Google Gemini
 
-### White Libra | Milan, Italy
+### [White Libra](https://whitelibra.com){:target="_blank" rel="noopener noreferrer"} | Milan, Italy
 *Freelance Lead Developer (February 2022 – December 2024)*
 
 - Design and implementation of a Python backend service to process user data and recommend a list of projects, followed by a subsequent re-design to leverage OpenAI APIs, implementing the recommendation logic via embeddings and LLM models.
@@ -55,7 +79,7 @@ I design backend systems for clarity and easy maintenance, while ensuring my fro
 
 **Technologies:** Ruby on Rails, JS, Vue.js, Python, DevOps, OpenAI API
 
-### Binary System Srl | Piacenza, Italy
+### [Binary System Srl](https://binarysystem.eu){:target="_blank" rel="noopener noreferrer"} | Piacenza, Italy
 *Freelance Software Developer (July 2022 – December 2023)*
 
 - Creation of new features interconnected between multiple services.
@@ -64,7 +88,7 @@ I design backend systems for clarity and easy maintenance, while ensuring my fro
 
 **Technologies:** Ruby on Rails, NodeJS, Vue.js, Python, ETL, postgreSQL, knex.js, docker, git, microservices
 
-### MyLime | Cremona, Italy
+### [MyLime](https://my-lime.com){:target="_blank" rel="noopener noreferrer"} | Cremona, Italy
 *Freelance Software Developer (August 2021 – December 2021)*
 
 - API and security development.
@@ -74,7 +98,7 @@ I design backend systems for clarity and easy maintenance, while ensuring my fro
 
 **Technologies:** Ruby, Ruby on Rails, Heroku, Solidity, PolygonMATIC
 
-### Axini | Amsterdam, Netherlands
+### [Axini](https://axini.com){:target="_blank" rel="noopener noreferrer"} | Amsterdam, Netherlands
 *Software Developer (July 2018 – June 2021)*
 
 - Worked on a proprietary domain specific language.
@@ -84,7 +108,7 @@ I design backend systems for clarity and easy maintenance, while ensuring my fro
 
 **Technologies:** Ruby, Ruby on Rails, Coffeescript, DSL, git, docker
 
-### ProctorExam | Amsterdam, Netherlands
+### [ProctorExam](https://proctorexam.com){:target="_blank" rel="noopener noreferrer"} | Amsterdam, Netherlands
 *Full-stack Developer (July 2015 – May 2018)*
 
 - Reduced the transcoding time of videos of 5 times.
@@ -95,21 +119,21 @@ I design backend systems for clarity and easy maintenance, while ensuring my fro
 
 **Technologies:** Ruby, Ruby on Rails, ReactJs, RabbitMQ, psql, ffmpeg, Kurento, WebRTC, Node.js, mongoDB, AWS EC2 and S3 SDK, Google Cloud, Kubernetes, mentoring, pair programming, git
 
-### Questomatica Escape Experiences | Amsterdam, Netherlands
+### [Questomatica Escape Experiences](https://questomatica.nl){:target="_blank" rel="noopener noreferrer"} | Amsterdam, Netherlands
 *Software and electrical engineer (November 2015 – February 2016)*
 
 - Designed the software for Arduino boards architecture for controlling sensors, lights and other electromechanical devices of an escape room, formatted and re-organized the existing code.
 
 **Technologies:** Arduino, electronics
 
-### Plot Projects | Amsterdam, Netherlands
+### [Plot Projects](https://plotprojects.com){:target="_blank" rel="noopener noreferrer"} | Amsterdam, Netherlands
 *Web developer (February 2015 – June 2015)*
 
 - Implemented a new design for the company's website and new features for the product dashboard.
 
 **Technologies:** AngularJs, Wordpress, Scrum
 
-### DynamicBusinessManagementSystem srl | Trento, Italy
+### [DynamicBusinessManagementSystem srl](https://dbms-it.com){:target="_blank" rel="noopener noreferrer"} | Trento, Italy
 *Software developer, ERP and CRM advisor (August 2012 – December 2014)*
 
 - Consultancy over CRM.
