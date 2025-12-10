@@ -5,8 +5,10 @@ gem "jekyll", "~> 3.9.0"
 
 # This is the theme you're using.
 gem "minima", "~> 2.5"
-
+gem "webrick"
 # These are the plugins you're using from your _config.yml.
 group :jekyll_plugins do
   gem "jekyll-seo-tag"
+  # Required for GitHub Pages-like markdown processing
+  gem "kramdown-parser-gfm"
 end

@@ -1,0 +1,15 @@
+# Ignore the build output directory.
+_site/
+
+# Ignore Sass and Jekyll cache files.
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Ignore the Bundler directory.
+.bundle/
+
+# The Gemfile.lock is often ignored in GitHub Pages projects to avoid
+# conflicts between local dependencies and the gems available on the server.
+# This ensures GitHub Pages uses its own dependency resolution.
+Gemfile.lock
