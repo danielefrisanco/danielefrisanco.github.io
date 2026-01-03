@@ -40,10 +40,10 @@ Here is a summary of my primary areas of expertise and the technologies I have t
 
 ---
 
-## Work Experience as of december 2025
+## Work Experience as of January 2026
 
 ### [AI.Anima srl](https://ai-anima.ai){:target="_blank" rel="noopener noreferrer"} | Milan, Italy
-*Freelance Full Stack Developer (November 2025 – Ongoing)*
+*Freelance Full Stack Developer (November 2025 – December 2025)*
 
 - Responsive corporate website using Nuxt.js 3, Vue 3, and TypeScript (SSR).
 - Architecting a RESTful API with FastAPI, PostgreSQL, JWT AU and Redis.
