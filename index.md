@@ -40,7 +40,16 @@ Here is a summary of my primary areas of expertise and the technologies I have t
 
 ---
 
-## Work Experience as of January 2026
+## Work Experience as of April 2026
+
+### [inics.de](https://inics.de){:target="_blank" rel="noopener noreferrer"} | Germany
+*Senior Software Engineer (January 2026 – ongoing)*
+
+- Architecting and deploying a distributed FastAPI microservices platform for open-source digital media provenance tracking.
+- Designing asynchronous watermarking and verification workflows orchestrated with Temporal.
+- Building GitOps CI/CD pipelines featuring multi-platform container builds, SBOM generation, and Kubernetes deployment via ArgoCD and Helm.
+
+**Technologies:** Python, Keycloak, Temporal, Apache SkyWalking, Dapr, PostgreSQL (pgvector), MinIO, Redis, Nginx, Docker, Kubernetes, GitHub Actions CI/CD, Scaleway S3, Claude Code
 
 ### [AI.Anima srl](https://ai-anima.ai){:target="_blank" rel="noopener noreferrer"} | Milan, Italy
 *Freelance Full Stack Developer (November 2025 – December 2025)*
