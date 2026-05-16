@@ -1,7 +1,7 @@
 ---
 layout: home
 title: Full-stack Developer for Hire | Daniele Frisanco
-description: Daniele Frisanco is a freelance and full-time Full-stack Developer available for new projects and job opportunities. Expert in Ruby on Rails, Python, Vue.js, and Docker.
+description: Daniele Frisanco is a Full-stack Developer available for new projects and job opportunities. Expert in Ruby on Rails, Python, Vue.js, and Docker.
 ---
 
 ## About Me
@@ -13,7 +13,7 @@ description: Daniele Frisanco is a freelance and full-time Full-stack Developer 
   <div class="intro-text">
     I design backend systems for clarity and easy maintenance, while ensuring my frontend work is optimized for security and application performance. I am a loyal team member and can work autonomously, committed to delivering well-formatted code that simply works.
     <br><br>
-    <strong>I am currently available for freelance projects and full-time employment opportunities. Feel free to connect with me.</strong>
+    <strong>I am currently available for freelance projects and full-time or part-time employment opportunities. Feel free to connect with me.</strong>
     <br>
     <a href="/assets/pdf/Daniele_Frisanco_CV.pdf" class="button" target="_blank" rel="noopener noreferrer">Download CV</a>
   </div>
@@ -36,20 +36,22 @@ Here is a summary of my primary areas of expertise and the technologies I have t
 - **Python:** 4+ years of professional experience, including creating microservices, data processing scripts, and leveraging AI/ML libraries with FastAPI and OpenAI.
 - **Vue.js:** Nearly 4 years of experience in developing dynamic and responsive front-end applications, including migrating from Vue 2 to Vue 3.
 - **Node.js:** Extensive experience building back-end services and APIs, often in parallel with existing Ruby on Rails systems.
-- **Docker & CI/CD:** Over 7 years of experience in containerizing applications and automating deployment workflows with tools like Docker Compose and GitHub Actions.
+- **Docker, Kubernetes & CI/CD:** Over 5 years of experience in containerizing applications and automating deployment workflows with Docker, GitHub Actions, and GitOps pipelines; including production-grade Kubernetes infrastructure with Helm, ArgoCD, multi-platform builds, SBOM generation, vulnerability scanning, and cluster autoscaling.
+- **AI-Assisted Development:** Proficient in leveraging AI tools — including Claude Code and Gemini — to accelerate delivery, from rapid prototyping and code generation to architectural design and documentation; experienced in integrating AI workflows into professional engineering contexts to ship faster without compromising quality.
 
 ---
 
-## Work Experience as of April 2026
+## Work Experience as of May 2026
 
 ### [inics.de](https://inics.de){:target="_blank" rel="noopener noreferrer"} | Germany
-*Senior Software Engineer (January 2026 – ongoing)*
+*Senior Software & Platform Engineer (January 2026 – ongoing)*
 
-- Architecting and deploying a distributed FastAPI microservices platform for open-source digital media provenance tracking.
-- Designing asynchronous watermarking and verification workflows orchestrated with Temporal.
-- Building GitOps CI/CD pipelines featuring multi-platform container builds, SBOM generation, and Kubernetes deployment via ArgoCD and Helm.
+- Leading the architecture and deployment of a distributed FastAPI microservices platform for open-source digital media provenance tracking.
+- Designing async watermarking/verification workflows with Temporal, implementing GitOps CI/CD pipelines with multi-platform container builds, SBOM generation, vulnerability scanning, and Kubernetes deployment via ArgoCD and Helm; integrating distributed tracing with OpenTelemetry, Apache SkyWalking, and Jaeger for end-to-end observability across services.
+- Building a Bitcoin timestamping service for on-chain document notarization using Merkle tree batching and OpenTimestamps to anchor provenance proofs to the blockchain.
+- Architecting production-grade Kubernetes infrastructure with multi-zone high availability, stateful service failover (Redis Sentinel, Vault HA Raft), automated backups, and cluster autoscaling via Terraform.
 
-**Technologies:** Python, Keycloak, Temporal, Apache SkyWalking, Dapr, PostgreSQL (pgvector), MinIO, Redis, Nginx, Docker, Kubernetes, GitHub Actions CI/CD, Scaleway S3, Claude Code
+**Technologies:** Python, FastAPI, Keycloak, Temporal, Apache SkyWalking, OpenTelemetry, Jaeger, Dapr, PostgreSQL (pgvector), MinIO, Redis Sentinel, Nginx, Docker, Kubernetes, Helm, ArgoCD, GitHub Actions CI/CD, Scaleway S3, HashiCorp Vault, Terraform, dbmate, gRPC, Bitcoin Core, OpenTimestamps, Merkle trees, Claude Code
 
 ### [AI.Anima srl](https://ai-anima.ai){:target="_blank" rel="noopener noreferrer"} | Milan, Italy
 *Freelance Full Stack Developer (November 2025 – December 2025)*
@@ -63,20 +65,20 @@ Here is a summary of my primary areas of expertise and the technologies I have t
 
 **Technologies:** Nuxt.js 3 SSR, Python 3, Docker, RESTful API, Claude Ai, HeyGen LiveAvatar SDK, GitHub Actions CI/CD
 
-### [Leanbit srl](https://leanbit.it){:target="_blank" rel="noopener noreferrer"} | Padova, Italy
-*Freelance Software Developer (January 2024 – August 2025)*
+### [Leanbit srl](https://leanbit.it){:target="_blank" rel="noopener noreferrer"} / [Binary System srl](https://binarysystem.eu){:target="_blank" rel="noopener noreferrer"} | Italy
+*Freelance Software Developer (July 2022 – August 2025)*
+*via Leanbit srl (January 2024 – August 2025) · via Binary System srl (July 2022 – December 2023)*
 
-- Consultancy and full-stack development, supplier for Binary System srl.
-- Multiple projects, with back-ends in both RoR 7 (Ruby on Rails 7) and Node.js.
-- Development of Python scripts and services for the bidirectional integration and synchronization of data with an external service via dedicated APIs using FastAPI.
-- Setup and development of a new Node.js back-end in parallel with the RoR system.
-- Migration from Vue 2 to Vue 3.
+- Full-stack consultancy across multiple projects, with back-ends in both Ruby on Rails 7 and Node.js.
+- Creation of new features interconnected between multiple services and maintenance of back and front end.
+- Development of Python scripts, microservices, and FastAPI services for bidirectional data integration and synchronization with external APIs, including dynamic PDF generation.
+- Setup and development of a new Node.js back-end in parallel with the existing RoR system.
+- Migration from Vue 2 to Vue 3 and development of a front-end composables library in Vue.js 3 and Tailwind 4, written in TypeScript.
 - Creation of synchronous APIs for external clients using XML messages.
 - Implementation of SSO (Single Sign-On).
-- Development of a front-end composables library in Vue.js 3 and Tailwind 4, written in TypeScript.
 - Direct client communication/contact.
 
-**Technologies:** Ruby on Rails, NodeJS, Vue.js, python3, API, postgreSQL, knex.js, docker, git, Google Gemini
+**Technologies:** Ruby on Rails, NodeJS, Vue.js, Python, FastAPI, PostgreSQL, knex.js, Docker, Git, Google Gemini, ETL, microservices
 
 ### [White Libra](https://whitelibra.com){:target="_blank" rel="noopener noreferrer"} | Milan, Italy
 *Freelance Lead Developer (February 2022 – December 2024)*
@@ -87,15 +89,6 @@ Here is a summary of my primary areas of expertise and the technologies I have t
 - Deployment and testing.
 
 **Technologies:** Ruby on Rails, JS, Vue.js, Python, DevOps, OpenAI API
-
-### [Binary System Srl](https://binarysystem.eu){:target="_blank" rel="noopener noreferrer"} | Piacenza, Italy
-*Freelance Software Developer (July 2022 – December 2023)*
-
-- Creation of new features interconnected between multiple services.
-- Development and management of Python microservices dedicated to data processing and the dynamic generation of PDF documents for print output.
-- Maintenance and bug fixing back and front end (Ruby and Js, Node.js and Vue.js).
-
-**Technologies:** Ruby on Rails, NodeJS, Vue.js, Python, ETL, postgreSQL, knex.js, docker, git, microservices
 
 ### [MyLime](https://my-lime.com){:target="_blank" rel="noopener noreferrer"} | Cremona, Italy
 *Freelance Software Developer (August 2021 – December 2021)*
