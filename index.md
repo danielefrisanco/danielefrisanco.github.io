@@ -11,7 +11,7 @@ description: Daniele Frisanco is a Full-stack Developer available for new projec
     <img src="/assets/images/profile.jpg" alt="Daniele Frisanco">
   </div>
   <div class="intro-text">
-    I design backend systems for clarity and easy maintenance, while ensuring my frontend work is optimized for security and application performance. I am a loyal team member and can work autonomously, committed to delivering well-formatted code that simply works.
+    I design backend systems for clarity and easy maintenance, while ensuring my frontend work is optimized for security and application performance. I build and manage the containerized infrastructure that keeps applications scaling seamlessly. I am a loyal team member and can work autonomously, committed to delivering fast code and systems that simply work to industry standards.
     <br><br>
     <strong>I am currently available for freelance projects and full-time or part-time employment opportunities. Feel free to connect with me.</strong>
     <br>
