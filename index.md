@@ -13,11 +13,19 @@ description: Daniele Frisanco is a Full-stack Developer available for new projec
   <div class="intro-text">
     I design backend systems for clarity and easy maintenance, while ensuring my frontend work is optimized for security and application performance. I build and manage the containerized infrastructure that keeps applications scaling seamlessly. I am a loyal team member and can work autonomously, committed to delivering fast code and systems that simply work to industry standards.
     <br><br>
-    <strong>I am currently available for freelance projects and full-time or part-time employment opportunities. Feel free to connect with me.</strong>
+    <strong>Currently available for freelance projects and full-time or part-time employment opportunities.</strong>
+    <ul>
+      <li>Full-stack development — Ruby on Rails, Python, Node.js, Vue.js & more</li>
+      <li>System architecture design and platform engineering</li>
+      <li>MVP development and containerized infrastructure</li>
+      <li>DevOps, CI/CD pipelines, and cloud migrations</li>
+      <li>Technical leadership &amp; AI-augmented team mentoring</li>
+    </ul>
     <br>
     <a href="/assets/pdf/Daniele_Frisanco_CV.pdf" class="button" target="_blank" rel="noopener noreferrer">Download CV</a>
   </div>
 </div>
+
 ### Connect with me
 
 - [**Email**](mailto:{{ site.author.email }})
@@ -43,15 +51,16 @@ Here is a summary of my primary areas of expertise and the technologies I have t
 
 ## Work Experience as of May 2026
 
-### [inics.de](https://inics.de){:target="_blank" rel="noopener noreferrer"} | Germany
+### [inics.eu](https://inics.eu){:target="_blank" rel="noopener noreferrer"} — [puit.is](https://puitis.com/){:target="_blank" rel="noopener noreferrer"} | Cyprus
 *Senior Software & Platform Engineer (January 2026 – ongoing)*
 
 - Leading the architecture and deployment of a distributed FastAPI microservices platform for open-source digital media provenance tracking.
 - Designing async watermarking/verification workflows with Temporal, implementing GitOps CI/CD pipelines with multi-platform container builds, SBOM generation, vulnerability scanning, and Kubernetes deployment via ArgoCD and Helm; integrating distributed tracing with OpenTelemetry, Apache SkyWalking, and Jaeger for end-to-end observability across services.
 - Building a Bitcoin timestamping service for on-chain document notarization using Merkle tree batching and OpenTimestamps to anchor provenance proofs to the blockchain.
 - Architecting production-grade Kubernetes infrastructure with multi-zone high availability, stateful service failover (Redis Sentinel, Vault HA Raft), automated backups, and cluster autoscaling via Terraform.
+- Designing and prototyping a decentralized network layer for provider-governed media provenance: on-chain membership governance via Solidity smart contracts (ERC-20 soulbound token + OZ Governor + Timelock), peer-to-peer data replication with OrbitDB/libp2p, and end-to-end key management for encrypted inter-node messaging.
 
-**Technologies:** Python, FastAPI, Keycloak, Temporal, Apache SkyWalking, OpenTelemetry, Jaeger, Dapr, PostgreSQL (pgvector), MinIO, Redis Sentinel, Nginx, Docker, Kubernetes, Helm, ArgoCD, GitHub Actions CI/CD, Scaleway S3, HashiCorp Vault, Terraform, dbmate, gRPC, Bitcoin Core, OpenTimestamps, Merkle trees, Claude Code
+**Technologies:** Python, FastAPI, Keycloak, Temporal, Apache SkyWalking, OpenTelemetry, Jaeger, Dapr, PostgreSQL (pgvector), MinIO, Redis Sentinel, Nginx, Docker, Kubernetes, Helm, ArgoCD, GitHub Actions CI/CD, Scaleway S3, HashiCorp Vault, Terraform, dbmate, gRPC, Bitcoin Core, OpenTimestamps, Merkle trees, Solidity, Foundry, Viem, OrbitDB, libp2p, IPFS, Ethereum/EVM, Smart Contracts, Claude Code
 
 ### [AI.Anima srl](https://ai-anima.ai){:target="_blank" rel="noopener noreferrer"} | Milan, Italy
 *Freelance Full Stack Developer (November 2025 – December 2025)*
