@@ -1,0 +1,12 @@
+- name: Ruby on Rails
+  detail: Over 10 years building, maintaining, and scaling complex back-end systems.
+- name: Python
+  detail: 4+ years of professional experience — microservices, data processing, and AI/ML with FastAPI and OpenAI.
+- name: Vue.js
+  detail: Nearly 4 years building dynamic, responsive front-ends, including migrating from Vue 2 to Vue 3.
+- name: Node.js
+  detail: Extensive experience building back-end services and APIs, often alongside Ruby on Rails.
+- name: Docker, Kubernetes & CI/CD
+  detail: 5+ years containerizing apps and automating deployments — GitHub Actions, GitOps, Helm, ArgoCD, SBOM, vulnerability scanning, cluster autoscaling.
+- name: AI-Assisted Development
+  detail: Proficient with Claude Code and Gemini to accelerate delivery — prototyping, code generation, architecture, and documentation, without compromising quality.

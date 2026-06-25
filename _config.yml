@@ -9,6 +9,12 @@ author:
   npm: https://www.npmjs.com/~danielefrisanco
 
 # Build settings
-theme: minima
 plugins:
   - jekyll-seo-tag
+
+exclude:
+  - todo.md
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor

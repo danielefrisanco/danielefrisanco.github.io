@@ -1,0 +1,125 @@
+- company: inics.eu
+  url: https://inics.eu
+  secondary: puit.is
+  secondary_url: https://puitis.com/
+  location: Cyprus
+  role: Senior Software & Platform Engineer
+  period: January 2026 – ongoing
+  current: true
+  highlights:
+    - Leading the architecture and deployment of a distributed FastAPI microservices platform for open-source digital media provenance tracking.
+    - Designing async watermarking/verification workflows with Temporal, implementing GitOps CI/CD pipelines with multi-platform container builds, SBOM generation, vulnerability scanning, and Kubernetes deployment via ArgoCD and Helm; integrating distributed tracing with OpenTelemetry, Apache SkyWalking, and Jaeger for end-to-end observability across services.
+    - Building a Bitcoin timestamping service for on-chain document notarization using Merkle tree batching and OpenTimestamps to anchor provenance proofs to the blockchain.
+    - Architecting production-grade Kubernetes infrastructure with multi-zone high availability, stateful service failover (Redis Sentinel, Vault HA Raft), automated backups, and cluster autoscaling via Terraform.
+    - "Designing and prototyping a decentralized network layer for provider-governed media provenance: on-chain membership governance via Solidity smart contracts (ERC-20 soulbound token + OZ Governor + Timelock), peer-to-peer data replication with OrbitDB/libp2p, and end-to-end key management for encrypted inter-node messaging."
+  tech: [Python, FastAPI, Keycloak, Temporal, Apache SkyWalking, OpenTelemetry, Jaeger, Dapr, PostgreSQL (pgvector), MinIO, Redis Sentinel, Nginx, Docker, Kubernetes, Helm, ArgoCD, GitHub Actions CI/CD, Scaleway S3, HashiCorp Vault, Terraform, dbmate, gRPC, Bitcoin Core, OpenTimestamps, Merkle trees, Solidity, Foundry, Viem, OrbitDB, libp2p, IPFS, Ethereum/EVM, Smart Contracts, Claude Code]
+
+- company: AI.Anima srl
+  url: https://ai-anima.ai
+  location: Milan, Italy
+  role: Freelance Full Stack Developer
+  period: November 2025 – December 2025
+  highlights:
+    - Responsive corporate website using Nuxt.js 3, Vue 3, and TypeScript (SSR).
+    - Architecting a RESTful API with FastAPI, PostgreSQL, JWT AU and Redis.
+    - Containerization of the entire application stack using Docker Compose and automated CI/CD deployment to Scaleway using GitHub Actions.
+    - Delivery of a complete end-to-end solution with support for internationalization (i18n), form validation, data persistence in the database, CSRF protection, Nginx reverse proxy with SSL/TLS, and automated email workflows.
+    - Implementation of security hardening with Content Security Policy (CSP), HSTS, secure cookies, and rate limiting.
+    - Integration of HeyGen LiveAvatar SDK for real-time AI-powered digital human interactions.
+  tech: [Nuxt.js 3 SSR, Python 3, Docker, RESTful API, Claude Ai, HeyGen LiveAvatar SDK, GitHub Actions CI/CD]
+
+- company: Leanbit srl / Binary System srl
+  url: https://leanbit.it
+  secondary: binarysystem.eu
+  secondary_url: https://binarysystem.eu
+  location: Italy
+  role: Freelance Software Developer
+  period: July 2022 – August 2025
+  note: via Leanbit srl (January 2024 – August 2025) · via Binary System srl (July 2022 – December 2023)
+  highlights:
+    - Full-stack consultancy across multiple projects, with back-ends in both Ruby on Rails 7 and Node.js.
+    - Creation of new features interconnected between multiple services and maintenance of back and front end.
+    - Development of Python scripts, microservices, and FastAPI services for bidirectional data integration and synchronization with external APIs, including dynamic PDF generation.
+    - Setup and development of a new Node.js back-end in parallel with the existing RoR system.
+    - Migration from Vue 2 to Vue 3 and development of a front-end composables library in Vue.js 3 and Tailwind 4, written in TypeScript.
+    - Creation of synchronous APIs for external clients using XML messages.
+    - Implementation of SSO (Single Sign-On).
+    - Direct client communication/contact.
+  tech: [Ruby on Rails, NodeJS, Vue.js, Python, FastAPI, PostgreSQL, knex.js, Docker, Git, Google Gemini, ETL, microservices]
+
+- company: White Libra
+  url: https://whitelibra.com
+  location: Milan, Italy
+  role: Freelance Lead Developer
+  period: February 2022 – December 2024
+  highlights:
+    - Design and implementation of a Python backend service to process user data and recommend a list of projects, followed by a subsequent re-design to leverage OpenAI APIs, implementing the recommendation logic via embeddings and LLM models.
+    - Refactoring of the email and notification sending system.
+    - Design and implementation of the budget management system.
+    - Deployment and testing.
+  tech: [Ruby on Rails, JS, Vue.js, Python, DevOps, OpenAI API]
+
+- company: MyLime
+  url: https://my-lime.com
+  location: Cremona, Italy
+  role: Freelance Software Developer
+  period: August 2021 – December 2021
+  highlights:
+    - API and security development.
+    - Added integration testing.
+    - Writing of code, API, and end-user documentation.
+    - Research and proof of concept for multisig smart contracts over Polygon blockchain.
+  tech: [Ruby, Ruby on Rails, Heroku, Solidity, PolygonMATIC]
+
+- company: Axini
+  url: https://axini.com
+  location: Amsterdam, Netherlands
+  role: Software Developer
+  period: July 2018 – June 2021
+  highlights:
+    - Worked on a proprietary domain specific language.
+    - Front and back-end development.
+    - Creation and testing of models on-site.
+    - Messaging protocols testing and implementation of message converters and adapters.
+  tech: [Ruby, Ruby on Rails, Coffeescript, DSL, git, docker]
+
+- company: ProctorExam
+  url: https://proctorexam.com
+  location: Amsterdam, Netherlands
+  role: Full-stack Developer
+  period: July 2015 – May 2018
+  highlights:
+    - Reduced the transcoding time of videos of 5 times.
+    - Reduced the cost per minute of streaming with the creation of an in-house WebRtc server.
+    - Increased the test coverage by 50%.
+    - Created a new set of APIs.
+    - Mentored 4 interns.
+  tech: [Ruby, Ruby on Rails, ReactJs, RabbitMQ, psql, ffmpeg, Kurento, WebRTC, Node.js, mongoDB, AWS EC2 and S3 SDK, Google Cloud, Kubernetes, mentoring, pair programming, git]
+
+- company: Questomatica Escape Experiences
+  url: https://questomatica.nl
+  location: Amsterdam, Netherlands
+  role: Software and electrical engineer
+  period: November 2015 – February 2016
+  highlights:
+    - Designed the software for Arduino boards architecture for controlling sensors, lights and other electromechanical devices of an escape room, formatted and re-organized the existing code.
+  tech: [Arduino, electronics]
+
+- company: Plot Projects
+  url: https://plotprojects.com
+  location: Amsterdam, Netherlands
+  role: Web developer
+  period: February 2015 – June 2015
+  highlights:
+    - Implemented a new design for the company's website and new features for the product dashboard.
+  tech: [AngularJs, Wordpress, Scrum]
+
+- company: DynamicBusinessManagementSystem srl
+  url: https://dbms-it.com
+  location: Trento, Italy
+  role: Software developer, ERP and CRM advisor
+  period: August 2012 – December 2014
+  highlights:
+    - Consultancy over CRM.
+    - I have developed new and personalized features, both front and back end, for ERP software.
+  tech: [T-sql, PowerBuilder, Javascript, Html]

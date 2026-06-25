@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+
+{%- include head.html -%}
+
+<body>
+
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#top" class="nav__brand">Daniele&nbsp;Frisanco</a>
+
+      <nav class="nav__links" id="navLinks" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <a href="{{ '/assets/pdf/Daniele_Frisanco_CV.pdf' | relative_url }}" class="nav__cv" target="_blank" rel="noopener noreferrer">CV</a>
+      </nav>
+
+      <div class="nav__actions">
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode">
+          <span class="theme-toggle__sun" aria-hidden="true">☀</span>
+          <span class="theme-toggle__moon" aria-hidden="true">☾</span>
+        </button>
+        <button class="nav__burger" id="navBurger" type="button" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <div class="hero__text reveal">
+          <span class="badge"><span class="badge__dot"></span> Available for hire</span>
+          <h1 class="hero__title">Daniele Frisanco</h1>
+          <p class="hero__subtitle">Full-stack Developer &amp; Platform Engineer</p>
+          <p class="hero__tagline">
+            I build backend systems for clarity and maintainability, ship secure
+            and performant frontends, and run the containerized infrastructure that
+            keeps them scaling — code and systems that simply work.
+          </p>
+          <div class="hero__cta">
+            <a href="#contact" class="btn btn--primary">Hire me</a>
+            <a href="{{ '/assets/pdf/Daniele_Frisanco_CV.pdf' | relative_url }}" class="btn btn--ghost" target="_blank" rel="noopener noreferrer">Download CV</a>
+          </div>
+          <div class="hero__social">
+            <a href="mailto:{{ site.author.email }}" aria-label="Email">Email</a>
+            <a href="{{ site.author.linkedin }}" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="{{ site.author.github }}" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="{{ site.author.rubygems }}" target="_blank" rel="noopener noreferrer">RubyGems</a>
+            <a href="{{ site.author.npm }}" target="_blank" rel="noopener noreferrer">npm</a>
+          </div>
+        </div>
+        <div class="hero__photo reveal">
+          <img src="{{ '/assets/images/profile.jpg' | relative_url }}" alt="Daniele Frisanco" loading="eager" width="240" height="240">
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container">
+        <h2 class="section__title reveal">About</h2>
+        <div class="about reveal">
+          <p>
+            I design backend systems for clarity and easy maintenance, while ensuring
+            my frontend work is optimized for security and application performance. I
+            build and manage the containerized infrastructure that keeps applications
+            scaling seamlessly. I am a loyal team member and can work autonomously,
+            committed to delivering fast code and systems that simply work to industry standards.
+          </p>
+          <p><strong>Currently available for freelance projects and full-time or part-time employment opportunities.</strong></p>
+          <ul class="about__list">
+            <li>Full-stack development — Ruby on Rails, Python, Node.js, Vue.js &amp; more</li>
+            <li>System architecture design and platform engineering</li>
+            <li>MVP development and containerized infrastructure</li>
+            <li>DevOps, CI/CD pipelines, and cloud migrations</li>
+            <li>Technical leadership &amp; AI-augmented team mentoring</li>
+          </ul>
+          <p class="about__note">My side projects often explore <strong>security and privacy</strong> — building tools that make safe, privacy-respecting data handling easier.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section section--alt" id="skills">
+      <div class="container">
+        <h2 class="section__title reveal">Key Skills &amp; Technologies</h2>
+        <div class="skills">
+          {%- for skill in site.data.skills -%}
+          <article class="card skill reveal">
+            <h3 class="skill__name">{{ skill.name }}</h3>
+            <p class="skill__detail">{{ skill.detail }}</p>
+          </article>
+          {%- endfor -%}
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section" id="experience">
+      <div class="container">
+        <h2 class="section__title reveal">Work Experience</h2>
+        <div class="timeline">
+          {%- for job in site.data.experience -%}
+          <article class="card job reveal{% if job.current %} job--current{% endif %}">
+            <div class="job__head">
+              <h3 class="job__company">
+                <a href="{{ job.url }}" target="_blank" rel="noopener noreferrer">{{ job.company }}</a>
+                {%- if job.secondary %} <span class="job__sep">·</span> <a href="{{ job.secondary_url }}" target="_blank" rel="noopener noreferrer">{{ job.secondary }}</a>{%- endif -%}
+              </h3>
+              <span class="job__location">{{ job.location }}</span>
+            </div>
+            <p class="job__role">{{ job.role }} <span class="job__period">{{ job.period }}</span></p>
+            {%- if job.note %}<p class="job__note">{{ job.note }}</p>{%- endif -%}
+            <ul class="job__highlights">
+              {%- for h in job.highlights -%}<li>{{ h }}</li>{%- endfor -%}
+            </ul>
+            <div class="tags">
+              {%- for t in job.tech -%}<span class="tag">{{ t }}</span>{%- endfor -%}
+            </div>
+          </article>
+          {%- endfor -%}
+        </div>
+      </div>
+    </section>
+
+    <!-- SIDE PROJECTS -->
+    <section class="section section--alt" id="projects">
+      <div class="container">
+        <h2 class="section__title reveal">Side Projects</h2>
+        <p class="section__lead reveal">Open-source work, often focused on <strong>security &amp; privacy</strong>.</p>
+        <div class="projects">
+          {%- for proj in site.data.projects -%}
+          <article class="card project reveal">
+            <h3 class="project__name">
+              <a href="{{ proj.url }}" target="_blank" rel="noopener noreferrer">{{ proj.name }}</a>
+            </h3>
+            <p class="project__desc">{{ proj.description }}</p>
+            <div class="tags">
+              {%- for t in proj.tech -%}<span class="tag">{{ t }}</span>{%- endfor -%}
+            </div>
+            <a href="{{ proj.url }}" class="project__link" target="_blank" rel="noopener noreferrer">View on RubyGems →</a>
+          </article>
+          {%- endfor -%}
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION & LANGUAGES -->
+    <section class="section" id="education">
+      <div class="container">
+        <div class="two-col">
+          <div class="reveal">
+            <h2 class="section__title">Education</h2>
+            <div class="card">
+              <h3 class="job__company">Bachelor degree in Computer Science</h3>
+              <p class="job__role">Trento University — Mathematics, Physics &amp; Natural Sciences <span class="job__period">September 2008 – March 2012</span></p>
+              <p>Grade: 97/110</p>
+            </div>
+          </div>
+          <div class="reveal">
+            <h2 class="section__title">Languages</h2>
+            <div class="card">
+              <ul class="lang-list">
+                <li><strong>Italian</strong> <span>Native</span></li>
+                <li><strong>English</strong> <span>Fluent</span></li>
+                <li><strong>Dutch</strong> <span>Basic</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+      <div class="container reveal">
+        <h2 class="section__title">Let's work together</h2>
+        <p class="contact__lead">
+          Available for freelance projects and full-time or part-time roles.
+          The fastest way to reach me is email.
+        </p>
+        <div class="contact__cta">
+          <a href="mailto:{{ site.author.email }}" class="btn btn--primary">{{ site.author.email }}</a>
+          <a href="{{ site.author.linkedin }}" class="btn btn--ghost" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="{{ site.author.github }}" class="btn btn--ghost" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}</p>
+    </div>
+  </footer>
+
+  <script src="{{ '/assets/main.js' | relative_url }}" defer></script>
+</body>
+</html>

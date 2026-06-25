@@ -1,0 +1,4 @@
+- name: data_redactor
+  url: https://rubygems.org/gems/data_redactor
+  description: "A high-performance Ruby gem (C extension) that scans and redacts sensitive data — API keys, credit cards, national IDs, emails, IPs, and more — across strings, hashes, JSON, and Rails/Rack payloads. Ships 89 built-in patterns across 15+ countries, with a single-pass NFA→DFA engine that processes ~1 MB in ~142 ms. Includes Logger, Rails, Rack, and Claude/OpenAI integrations."
+  tech: [Ruby, C extension, Privacy, Security, Rails, Rack]
