@@ -383,6 +383,121 @@ img { max-width: 100%; display: block; }
 }
 
 /* ============================================================
+   Blog
+   ============================================================ */
+.container--narrow { max-width: 720px; }
+
+/* --- Listing --- */
+.blog__intro { color: var(--text-soft); margin: 0 0 30px; max-width: 62ch; }
+.blog__empty { color: var(--text-soft); }
+.postlist { display: grid; gap: 18px; }
+
+.postcard__link { display: block; color: inherit; }
+.postcard__meta {
+  margin: 0 0 8px;
+  color: var(--text-soft);
+  font-size: 0.82rem;
+  font-weight: 500;
+}
+.postcard__title {
+  margin: 0 0 10px;
+  font-size: 1.15rem;
+  line-height: 1.35;
+  letter-spacing: -0.01em;
+  color: var(--text);
+  transition: color 0.15s;
+}
+.postcard__link:hover .postcard__title { color: var(--accent-2); }
+.postcard__excerpt { margin: 0; color: var(--text-soft); font-size: 0.95rem; }
+.postcard__more {
+  display: inline-block;
+  margin-top: 12px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--accent-2);
+}
+.postcard__link:hover .postcard__more { color: var(--accent); }
+
+/* --- Single post --- */
+.post__nav { margin: 0 0 20px; }
+.post__foot { margin: 36px 0 0; padding-top: 22px; border-top: 1px solid var(--border); }
+.post__back { font-size: 0.88rem; font-weight: 600; }
+.post__title {
+  margin: 0 0 12px;
+  font-size: clamp(1.7rem, 4.2vw, 2.35rem);
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+.post__byline { margin: 0 0 34px; color: var(--text-soft); font-size: 0.88rem; font-weight: 500; }
+.post__dot { margin: 0 6px; }
+
+/* --- Prose: styles the raw markdown output --- */
+.post__body { font-size: 1.05rem; line-height: 1.75; overflow-wrap: break-word; }
+.post__body > *:first-child { margin-top: 0; }
+.post__body p { margin: 0 0 1.15em; }
+.post__body h2 {
+  margin: 2.1em 0 0.7em;
+  padding-top: 0.7em;
+  border-top: 1px solid var(--border);
+  font-size: 1.35rem;
+  line-height: 1.3;
+  letter-spacing: -0.015em;
+}
+.post__body h3 { margin: 1.8em 0 0.5em; font-size: 1.1rem; letter-spacing: -0.01em; }
+.post__body a {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  text-decoration-color: var(--accent-line);
+  transition: color 0.15s, text-decoration-color 0.15s;
+}
+.post__body a:hover { text-decoration-color: var(--accent); }
+.post__body ul, .post__body ol { margin: 0 0 1.15em; padding-left: 1.3em; }
+.post__body li { margin-bottom: 0.4em; }
+.post__body li::marker { color: var(--accent-2); }
+.post__body blockquote {
+  margin: 1.6em 0;
+  padding: 2px 0 2px 18px;
+  border-left: 3px solid var(--accent);
+  color: var(--text-soft);
+  font-style: italic;
+}
+.post__body blockquote p:last-child { margin-bottom: 0; }
+.post__body code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.88em;
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  padding: 1px 5px;
+}
+.post__body pre {
+  margin: 0 0 1.3em;
+  padding: 16px 18px;
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  overflow-x: auto;
+  font-size: 0.88rem;
+  line-height: 1.6;
+}
+.post__body pre code { background: none; border: 0; padding: 0; font-size: inherit; }
+.post__body img {
+  margin: 1.5em 0;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+}
+/* Diagrams carry a baked-in white background; mat them in dark mode so they
+   read as figures rather than glaring panels. */
+[data-theme='dark'] .post__body img { background: #fff; padding: 10px; }
+.post__body hr { border: 0; border-top: 1px solid var(--border); margin: 2.2em 0; }
+.post__body figcaption { color: var(--text-soft); font-size: 0.85rem; text-align: center; }
+.post__table-wrap, .post__body table { display: block; overflow-x: auto; }
+.post__body table { width: 100%; border-collapse: collapse; margin: 0 0 1.3em; font-size: 0.94rem; }
+.post__body th, .post__body td { border: 1px solid var(--border); padding: 8px 12px; text-align: left; }
+.post__body th { background: var(--bg-alt); font-weight: 600; }
+
+/* ============================================================
    Responsive
    ============================================================ */
 @media (max-width: 760px) {

@@ -1,0 +1,40 @@
+---
+layout: default
+permalink: /blog/
+title: Writing
+description: Notes on media provenance, secure delivery, and building and running backend systems.
+---
+
+    <section class="section">
+      <div class="container">
+        <h1 class="section__title reveal">Writing</h1>
+        <p class="blog__intro reveal">
+          Occasional notes on the things I build and the problems around them —
+          media provenance, secure delivery, and running backend systems in production.
+        </p>
+
+        <div class="postlist">
+          {%- for post in site.posts %}
+          <article class="card postcard reveal">
+            <a class="postcard__link" href="{{ post.url | relative_url }}">
+              <p class="postcard__meta">
+                <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time>
+                <span class="post__dot">&middot;</span>
+                {{ post.content | strip_html | number_of_words | divided_by: 200 | plus: 1 }} min read
+              </p>
+              <h2 class="postcard__title">{{ post.title }}</h2>
+              <p class="postcard__excerpt">{{ post.description | default: post.excerpt | strip_html | strip_newlines | truncate: 220 }}</p>
+              <span class="postcard__more">Read &rarr;</span>
+            </a>
+            {%- if post.tags.size > 0 %}
+            <div class="tags">
+              {%- for t in post.tags -%}<span class="tag">{{ t }}</span>{%- endfor -%}
+            </div>
+            {%- endif %}
+          </article>
+          {%- else %}
+          <p class="blog__empty">Nothing published yet — check back soon.</p>
+          {%- endfor %}
+        </div>
+      </div>
+    </section>

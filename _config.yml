@@ -9,6 +9,9 @@ author:
   rubygems: https://rubygems.org/profiles/danielefrisanco
   npm: https://www.npmjs.com/~danielefrisanco
 
+# Posts live at /blog/<slug>/
+permalink: /blog/:title/
+
 # Build settings
 plugins:
   - jekyll-seo-tag

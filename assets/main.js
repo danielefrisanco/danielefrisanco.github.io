@@ -57,11 +57,26 @@
     revealEls.forEach(function (el) { el.classList.add('is-visible'); });
   }
 
+  /* --- External links in post bodies open in a new tab --- */
+  var postBody = document.querySelector('.post__body');
+  if (postBody) {
+    postBody.querySelectorAll('a[href]').forEach(function (a) {
+      if (/^https?:/i.test(a.getAttribute('href') || '') && a.hostname !== location.hostname) {
+        a.setAttribute('target', '_blank');
+        a.setAttribute('rel', 'noopener noreferrer');
+      }
+    });
+  }
+
   /* --- Scroll spy (active nav link) --- */
-  var navAnchors = links ? links.querySelectorAll('a[href^="#"]') : [];
+  /* Nav anchors are rooted ("/#about") so they work from other pages too,
+     so match on any href containing a hash and read the fragment from it.
+     Off the homepage the target ids are absent and the spy stays idle. */
+  var navAnchors = links ? links.querySelectorAll('a[href*="#"]') : [];
   var sections = [];
   navAnchors.forEach(function (a) {
-    var id = a.getAttribute('href').slice(1);
+    var id = a.getAttribute('href').split('#')[1];
+    if (!id) return;
     var sec = document.getElementById(id);
     if (sec) sections.push({ a: a, sec: sec });
   });

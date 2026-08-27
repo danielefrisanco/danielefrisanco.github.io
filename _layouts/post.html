@@ -1,0 +1,36 @@
+---
+layout: default
+---
+
+    <article class="section post">
+      <div class="container container--narrow">
+
+        <p class="post__nav">
+          <a class="post__back" href="{{ '/blog/' | relative_url }}">&larr; All writing</a>
+        </p>
+
+        <header class="post__head">
+          <h1 class="post__title">{{ page.title }}</h1>
+          <p class="post__byline">
+            <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
+            <span class="post__dot">&middot;</span>
+            {{ content | strip_html | number_of_words | divided_by: 200 | plus: 1 }} min read
+          </p>
+        </header>
+
+        <div class="post__body">
+          {{ content }}
+        </div>
+
+        {%- if page.tags.size > 0 %}
+        <div class="tags">
+          {%- for t in page.tags -%}<span class="tag">{{ t }}</span>{%- endfor -%}
+        </div>
+        {%- endif %}
+
+        <p class="post__foot">
+          <a class="post__back" href="{{ '/blog/' | relative_url }}">&larr; All writing</a>
+        </p>
+
+      </div>
+    </article>
