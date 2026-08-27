@@ -8,6 +8,7 @@
   --accent:        #f59e0b;   /* warm amber */
   --accent-2:      #f97316;   /* orange */
   --accent-soft:   rgba(245, 158, 11, 0.14);
+  --accent-line:   rgba(245, 158, 11, 0.45);  /* underline for links styled as headings */
   --radius:        14px;
   --radius-sm:     9px;
   --maxw:          960px;
@@ -60,6 +61,33 @@ body {
 
 a { color: var(--accent-2); text-decoration: none; transition: color 0.15s; }
 a:hover { color: var(--accent); }
+
+/* Links that sit inside headings (job companies, project names) keep the
+   heading's colour, so they need their own affordance: a soft underline
+   plus an outbound marker, since all of them open in a new tab. */
+.job__company a,
+.project__name a {
+  color: var(--text);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+  text-decoration-color: var(--accent-line);
+  transition: color 0.15s, text-decoration-color 0.15s;
+}
+.job__company a:hover,
+.project__name a:hover { color: var(--accent-2); text-decoration-color: var(--accent-2); }
+
+.job__company a::after,
+.project__name a::after {
+  content: '\2197';           /* ↗ marks an outbound link */
+  display: inline-block;      /* keeps the parent underline off the arrow */
+  margin-left: 4px;
+  font-size: 0.72em;
+  color: var(--text-soft);
+  transition: color 0.15s, transform 0.15s var(--ease);
+}
+.job__company a:hover::after,
+.project__name a:hover::after { color: var(--accent-2); transform: translate(1px, -1px); }
 
 img { max-width: 100%; display: block; }
 
@@ -293,8 +321,6 @@ img { max-width: 100%; display: block; }
 /* Side projects */
 .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 18px; }
 .project__name { margin: 0 0 8px; font-size: 1.1rem; }
-.project__name a { color: var(--text); }
-.project__name a:hover { color: var(--accent-2); }
 .project__desc { margin: 0 0 14px; color: var(--text-soft); font-size: 0.95rem; }
 .project__link { display: inline-block; margin-top: 14px; font-weight: 600; font-size: 0.9rem; }
 
@@ -304,8 +330,6 @@ img { max-width: 100%; display: block; }
 .timeline { display: flex; flex-direction: column; gap: 20px; }
 .job__head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px; }
 .job__company { margin: 0; font-size: 1.15rem; letter-spacing: -0.01em; }
-.job__company a { color: var(--text); }
-.job__company a:hover { color: var(--accent-2); }
 .job__sep { color: var(--text-soft); }
 .job__location { color: var(--text-soft); font-size: 0.85rem; font-weight: 500; }
 .job__role { margin: 4px 0 0; font-weight: 600; color: var(--accent-2); }
