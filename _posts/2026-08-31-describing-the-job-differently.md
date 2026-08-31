@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Before and now: describing the job differently"
+title: "How do I even describe my job now, in an interview?"
 date: 2026-08-31 17:00:00 +0200
 description: "The old pitch was a list — languages, systems, companies. That list describes a job that used to exist. What replaces it is closer to a role than a skillset, and there is no clean noun for it yet."
 tags: [AI-Assisted Development, Engineering Practice, Career]
