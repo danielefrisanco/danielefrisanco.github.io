@@ -135,7 +135,11 @@ layout: default
             <div class="tags">
               {%- for t in proj.tech -%}<span class="tag">{{ t }}</span>{%- endfor -%}
             </div>
-            <a href="{{ proj.url }}" class="project__link" target="_blank" rel="noopener noreferrer">View on RubyGems →</a>
+            <div class="project__links">
+              {%- for link in proj.links -%}
+              <a href="{{ link.url }}" class="project__link" target="_blank" rel="noopener noreferrer">{{ link.text }}</a>
+              {%- endfor -%}
+            </div>
           </article>
           {%- endfor -%}
         </div>

@@ -322,7 +322,8 @@ img { max-width: 100%; display: block; }
 .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 18px; }
 .project__name { margin: 0 0 8px; font-size: 1.1rem; }
 .project__desc { margin: 0 0 14px; color: var(--text-soft); font-size: 0.95rem; }
-.project__link { display: inline-block; margin-top: 14px; font-weight: 600; font-size: 0.9rem; }
+.project__links { display: flex; flex-wrap: wrap; gap: 8px 20px; margin-top: 14px; }
+.project__link { display: inline-block; font-weight: 600; font-size: 0.9rem; }
 
 /* ============================================================
    Experience timeline

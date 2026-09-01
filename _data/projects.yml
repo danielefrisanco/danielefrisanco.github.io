@@ -1,4 +1,17 @@
+- name: neatline
+  url: https://danielefrisanco.github.io/neatline/
+  description: "A map maker that runs entirely in your browser. Pick a part of the world and a style, click the map to add pins, arrows and routes, and take it away as an SVG or a PNG — no account, no API key, and nothing sent anywhere. A map you make is a link you can send, and it reopens exactly as you left it. Also published on npm as a library, for generating the same maps from code."
+  tech: [Maps, Cartography, SVG, TypeScript, Browser-only, npm]
+  links:
+    - text: "Try it in the browser →"
+      url: https://danielefrisanco.github.io/neatline/
+    - text: "View on npm →"
+      url: https://www.npmjs.com/package/@neatline/map
+
 - name: data_redactor
   url: https://rubygems.org/gems/data_redactor
   description: "A high-performance Ruby gem (C extension) that scans and redacts sensitive data — API keys, credit cards, national IDs, emails, IPs, and more — across strings, hashes, JSON, and Rails/Rack payloads. Ships 89 built-in patterns across 15+ countries, with a single-pass NFA→DFA engine that processes ~1 MB in ~142 ms. Includes Logger, Rails, Rack, and Claude/OpenAI integrations."
   tech: [Ruby, C extension, Privacy, Security, Rails, Rack]
+  links:
+    - text: "View on RubyGems →"
+      url: https://rubygems.org/gems/data_redactor
