@@ -8,5 +8,11 @@
   detail: Extensive experience building back-end services and APIs, often alongside Ruby on Rails.
 - name: Docker, Kubernetes & CI/CD
   detail: 5+ years containerizing apps and automating deployments — GitHub Actions, GitOps, Helm, ArgoCD, SBOM, vulnerability scanning, cluster autoscaling.
+- name: Cloud Infrastructure as Code
+  detail: Provisioning and hardening production environments as code — Terraform, Ansible, Vault, Keycloak, TLS, observability, and backups with tested restores.
+- name: AI & LLM Engineering
+  detail: Building AI into products — RAG and vector search on pgvector, embedding pipelines, MCP servers, and agent workflows on the OpenAI, Claude, and Gemini APIs.
 - name: AI-Assisted Development
   detail: Proficient with Claude Code and Gemini to accelerate delivery — prototyping, code generation, architecture, and documentation, without compromising quality.
+- name: End-to-End Delivery
+  detail: Taking a project from empty repository to production single-handedly — architecture, implementation, infrastructure, security hardening, monitoring, and handover.
