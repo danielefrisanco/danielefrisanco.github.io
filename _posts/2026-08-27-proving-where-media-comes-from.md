@@ -18,7 +18,7 @@ The provider/deployer split moves around more than it first appears. Under the A
 
 California's law works alongside it: providers with over a million monthly users must offer a free public detection tool so people can check whether image, video, or audio content was created or altered by their system. Its sharper edge lands in 2027, when large platforms will be required to stop stripping standards-compliant provenance data on upload.
 
-Underneath both, provenance is becoming standardised infrastructure. JPEG Trust became [ISO/IEC 21617-1](https://www.iso.org/standard/86831.html) in January 2025, and its second edition aligns with ISO 22144, which standardises [Content Credentials](https://contentcredentials.org/) on top of the [C2PA](https://c2pa.org/) 2.1 specification.
+Underneath both, provenance is becoming standardised infrastructure: JPEG Trust became [ISO/IEC 21617-1](https://www.iso.org/standard/86831.html) in January 2025, and ISO 22144 standardises [Content Credentials](https://contentcredentials.org/) on top of the [C2PA](https://c2pa.org/) 2.1 specification.
 
 ## Provenance is a lookup problem
 
@@ -38,11 +38,11 @@ Where that manifest actually sits matters, because "metadata" makes it sound fli
 
 What ties the manifest to the asset is a hard binding — a cryptographic hash over the file's bytes. That binding is what makes the record trustworthy, and it's also what makes it fragile under ordinary processing. Decoding an image to a bitmap and re-encoding it produces different bytes, so the hash no longer validates, and most encoders rebuild the container without carrying the segment across. Adaptive bitrate video makes this routine: [HLS](https://en.wikipedia.org/wiki/HTTP_Live_Streaming) and [DASH](https://en.wikipedia.org/wiki/Dynamic_Adaptive_Streaming_over_HTTP) re-encode a source into many renditions, each of which is a new file with no byte-level relationship to the original. The specification treats these as asset renditions and addresses them directly, which is why C2PA 2.1 introduced soft bindings — a fingerprint or an embedded watermark that identifies content by what it looks like rather than by its exact bytes, so a manifest can be found again after the bytes have changed.
 
-**Hybrid approaches.** Combining a watermark with a fingerprint isn't new. [Digimarc](https://en.wikipedia.org/wiki/Digimarc)'s 2011 patent on linking printed photos back to their source already proposed using a watermark to identify a creator's collection and a fingerprint to disambiguate within it, precisely because pure fingerprint matching against an open-world index is expensive and error-prone.
+**Hybrid approaches.** Combining the two naming methods isn't new. [Digimarc](https://en.wikipedia.org/wiki/Digimarc)'s 2011 patent on linking printed photos back to their source used a watermark to identify a creator's collection and a fingerprint to disambiguate within it — an embedded name to narrow the search, a derived name to finish it, because matching fingerprints against an open-world index is expensive and error-prone.
 
-Trufo and Attestiv run current versions of the same pattern. Trufo pairs C2PA certificate issuance with watermarking; Attestiv pairs blockchain-anchored perceptual fingerprints with forensic tamper scoring. Both carry their own tradeoffs. Attestiv's own published testing found real content occasionally flagged as suspicious.
+Trufo and Attestiv run current versions of that pattern, pairing C2PA certificate issuance with watermarking and blockchain-anchored fingerprints with tamper scoring respectively. Both carry tradeoffs: Attestiv's own published testing found real content occasionally flagged as suspicious.
 
-**Forensic watermarking for closed distribution.** [NAGRAVISION](https://en.wikipedia.org/wiki/Nagravision)'s NexGuard, used across film and TV, shows the same imperceptible-signal idea applied to a narrower case: tracing a leak back to one of a known, bounded set of recipients before public release, rather than proving origin to an open audience after content is already public.
+**Forensic watermarking for closed distribution.** [NAGRAVISION](https://en.wikipedia.org/wiki/Nagravision)'s NexGuard, used across film and TV, applies the same imperceptible-signal idea to a narrower case: tracing a leak back to one of a known, bounded set of recipients before public release. It is the one deployment here built against a real adversary, and it works by knowing every recipient in advance.
 
 ## Both ends of the chain are built
 
@@ -52,7 +52,7 @@ At capture, signing runs on shipping hardware. [Leica's M11-P](https://leica-cam
 
 At the other end, display works too. LinkedIn shows a Content Credentials icon that opens a provenance summary. Google's "About this image" reads C2PA data in Search. TikTok and YouTube surface credentials on uploads. Newsrooms sign in daily production: the BBC, Reuters, AFP, AP, the New York Times, the Wall Street Journal, NHK, ARD/ZDF, and [France Télévisions](https://www.francetelevisions.fr/groupe/notre-actualite/france-televisions-adopte-le-protocole-c2pa-47174), which certifies France 2's 1pm and 8pm news editions and publishes them on franceinfo's transparency page.
 
-Between those two ends sits everything else: uploads, transcodes, format conversions, messaging apps, CMS exports, screenshots. Each of those steps rewrites the file, and each rewrite is a point where a byte-bound record has to be deliberately carried across. Some pipelines do carry it. Many don't, which is why California is legislating a preservation duty for large platforms starting in 2027.
+Between those two ends sits everything else: uploads, transcodes, format conversions, messaging apps, CMS exports, screenshots. Each of those steps rewrites the file, and each rewrite is a point where a byte-bound record has to be deliberately carried across — and, under the AI Act, a point where responsibility may have moved. Some pipelines do carry it. Many don't, which is why California is legislating a preservation duty for large platforms starting in 2027.
 
 ## The gap the industry admits is still open
 
@@ -62,7 +62,7 @@ There's a further failure that only appears once two layers run together. A [202
 
 Invisible watermarks can be removed. Diffusion-based regeneration attacks re-synthesize an image without the watermark pattern, and the [winning entry in the NeurIPS 2024 removal challenge](https://arxiv.org/pdf/2508.21072) reported near-total removal at negligible quality cost.
 
-Those attacks describe a different problem from the one most institutions have. An archive migrating a collection between systems has no adversary. Neither does a newsroom exporting a photo through a CMS, or a licensed image forwarded through three messaging apps. Most provenance loss is incidental: compression, format conversion, upload processing, a screenshot. Handling incidental loss well is the job in front of the archives and rights holders working on this today. Adversarial removal is a separate research problem, and mixing the two makes claims harder to evaluate in both directions.
+Those attacks describe a different problem from the one most institutions have. An archive migrating a collection between systems has no adversary. Neither does a newsroom exporting a photo through a CMS, or a licensed image forwarded through three messaging apps. Most provenance loss is incidental: compression, format conversion, upload processing, a screenshot. Handling incidental loss well is the job in front of the archives and rights holders working on this today. Adversarial removal is a separate research problem, and mixing the two makes claims harder to evaluate in both directions. It is telling that the one approach above built for a real adversary, NexGuard, buys its strength by knowing every recipient in advance — a condition open distribution never provides.
 
 ## The layer that gets the least attention
 
@@ -72,7 +72,7 @@ Media provenance is working through the same shift. A signed manifest is a stron
 
 Underneath that sits a different question. Nearly all the public argument concerns which signal is most robust. But a provenance system has five parts: the signal in the file, the record it resolves to, the service that answers the lookup, the governance of that service, and the surface that displays the result. Robustness of the signal is one part of five, and it's the part that can be replaced most easily. Changing which party holds the record is a much larger operation, and that decision is usually made once.
 
-So the durable questions are: who runs the record, under which jurisdiction, and for how long. Archives work on timescales of a century. Software companies rarely last three decades. A verification path that requires one company's live database inherits that company's lifespan, and an archivist evaluating a provenance system will ask about that before asking how robust the watermark is.
+So the durable questions are: who runs the record, under which jurisdiction, and for how long. Standards bodies are one of the few places that question gets settled rather than argued, which is what the ISO work above is quietly doing. Archives work on timescales of a century. Software companies rarely last three decades. A verification path that requires one company's live database inherits that company's lifespan, and an archivist evaluating a provenance system will ask about that before asking how robust the watermark is.
 
 ## Where puit.is fits
 
