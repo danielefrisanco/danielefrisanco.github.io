@@ -10,10 +10,11 @@
     - Leading architecture and delivery of a distributed FastAPI microservices platform for open-source digital media provenance tracking.
     - "Building secure CI/CD: GitOps pipelines with SBOM generation, container vulnerability scanning, and multi-platform builds, deployed to Kubernetes via ArgoCD and Helm."
     - Hardening production infrastructure — HashiCorp Vault HA (Raft) for secrets, Keycloak for identity, multi-zone Kubernetes with stateful failover (Redis Sentinel), automated backups, and Terraform-provisioned autoscaling.
+    - Building the Terraform and Ansible infrastructure for a self-hosted, OAuth-secured MCP knowledge server that indexes a private document vault into Postgres/pgvector and serves it to multiple AI agents as shared persistent memory, with per-client write fencing, automated git sync, restic backups with tested restore, and failure alerting.
     - Designing async watermarking and verification workflows with Temporal, with end-to-end observability via OpenTelemetry, Apache SkyWalking, and Jaeger.
     - Building a Bitcoin timestamping service for on-chain document notarization using Merkle tree batching and OpenTimestamps to anchor provenance proofs to the blockchain.
     - "Designing and prototyping a decentralized network layer for provider-governed media provenance: on-chain membership governance via Solidity smart contracts (ERC-20 soulbound token + OZ Governor + Timelock), peer-to-peer data replication with OrbitDB/libp2p, and end-to-end key management for encrypted inter-node messaging."
-  tech: [Python, FastAPI, Keycloak, Temporal, Apache SkyWalking, OpenTelemetry, Jaeger, Dapr, PostgreSQL (pgvector), MinIO, Redis Sentinel, Nginx, Docker, Kubernetes, Helm, ArgoCD, GitHub Actions CI/CD, Scaleway S3, HashiCorp Vault, Terraform, dbmate, gRPC, Bitcoin Core, OpenTimestamps, Merkle trees, Solidity, Foundry, Viem, OrbitDB, libp2p, IPFS, Ethereum/EVM, Smart Contracts, Claude Code]
+  tech: [Python, FastAPI, Keycloak, Temporal, Apache SkyWalking, OpenTelemetry, Jaeger, Dapr, PostgreSQL (pgvector), MinIO, Redis Sentinel, Nginx, Docker, Kubernetes, Helm, ArgoCD, GitHub Actions CI/CD, Scaleway S3, HashiCorp Vault, Terraform, Ansible, Ollama, Caddy, systemd, OAuth 2.1, MCP, restic, dbmate, gRPC, Bitcoin Core, OpenTimestamps, Merkle trees, Solidity, Foundry, Viem, OrbitDB, libp2p, IPFS, Ethereum/EVM, Smart Contracts, Claude Code]
 
 - company: AI.Anima srl
   url: https://ai-anima.ai
