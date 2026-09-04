@@ -76,7 +76,7 @@ So the durable questions are: who runs the record, under which jurisdiction, and
 
 [puit.is](https://puitis.com) works on one part of this: keeping an origin link checkable after a file has been compressed, re-encoded, or moved between platforms.
 
-It embeds an imperceptible 128-bit identifier into the media signal, at or near the source. A commitment derived from that identifier is anchored to a tamper-evident public record. The media file itself is never published. When a copy resurfaces later, the identifier is read back out of the pixels and checked against the record.
+It embeds an imperceptible identifier into the media signal, at or near the source. A commitment derived from that identifier is anchored to a tamper-evident public record. The media file itself is never published. When a copy resurfaces later, the identifier is read back out of the pixels and checked against the record.
 
 Two design choices are worth pulling out.
 
