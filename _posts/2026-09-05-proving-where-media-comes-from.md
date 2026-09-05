@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Proving where media comes from is now a legal requirement. The hard part is who keeps the record."
-date: 2026-08-27 11:00:00 +0200
+date: 2026-09-05 11:00:00 +0200
 description: "The EU AI Act's Article 50 and California's SB 942 took effect on the same day. What is actually deployed for media provenance — generation-time watermarks, C2PA credentials, fingerprinting — why the industry says no single layer is enough, and where puit.is fits."
 tags: [Provenance, C2PA, Watermarking, EU AI Act, Media Integrity]
 ---
